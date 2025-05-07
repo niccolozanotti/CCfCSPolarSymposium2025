@@ -1,0 +1,60 @@
+\documentclass[a1paper, 25pt, portrait]{tikzposter}
+
+\usepackage{setup/setup}
+\usepackage{setup/commands}
+
+\usepackage{lipsum}
+
+
+\title{\LARGE FTorch: Enabling Online Training for Large-Scale
+Fortran Models}
+\author{\Large
+    \underline{Niccolò Zanotti}$^{1,2}$,
+    Joe Wallwork$^1$,
+    Jack Atkinson$^1$,
+    Tom Meltzer$^1$,
+    Dominic Orchard$^{1,3}$
+}
+\date{12 May 2025}
+\institute{\large
+    $^1$Institute of Computing for Climate Science, University of Cambridge, U.K. \\
+    $^2$University of Bologna, Italy \\
+    $^3$University of Kent, U.K.
+}
+\titlegraphic{
+\includegraphics[height=4cm]{logos/ICCS_cropped.jpg}\quad
+\includesvg[height=4cm]{logos/unibo-logo.svg}\quad
+\includegraphics[height=4cm]{logos/schmidtsciences_cropped.png}
+}
+
+% Abstract:
+% Abstract here
+
+\begin{document}
+\maketitle
+
+\begin{columns}
+  \column{0.5}
+  \block{Section 11}
+  {
+    \input{blocks/block11}
+  }
+  \block{Section 12}
+  {
+    \input{blocks/block12}
+  }\block{Section 13}{
+    \input{blocks/block13}
+  }
+
+  \column{0.5}
+  \block{Section 21}
+  {
+    \input{blocks/block21}
+  }
+  \block{Section 22}
+  {
+    \input{blocks/block22}
+  }
+\end{columns}
+
+\end{document}
