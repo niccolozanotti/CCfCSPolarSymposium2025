@@ -1,18 +1,21 @@
 \usepackage{amsmath, amssymb}
 \usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,
+	urlcolor=blue,
+	citecolor=blue,
+	pdfpagemode=FullScreen,
+}
 \usepackage{svg}
 \usepackage{subcaption}
 \usepackage{caption}
 \usepackage{float}
 \usepackage{qrcode}
-\hypersetup{
-	colorlinks=true,
-	linkcolor=blue,
-	filecolor=magenta,
-	urlcolor=black,
-	citecolor=blue,
-	pdfpagemode=FullScreen,
-}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+
 
 % BIBLIOGRAPHY
 \RequirePackage[style=authoryear,
@@ -24,7 +27,7 @@
 	isbn=false,
 	url=false,
 	eprint=false,
-	doi=false,
+	doi=true,
 	uniquelist=minyear % prevent issue for references of the same first author (even in different years)
 ]{biblatex}
 \addbibresource{bibliography.bib}

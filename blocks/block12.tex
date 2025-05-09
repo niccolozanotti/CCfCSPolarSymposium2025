@@ -1,1 +1,16 @@
-\lipsum[2]
+\begin{tikzfigure}
+    \includegraphics[width=0.44\textwidth]{figures/offline-training-diagram.pdf}
+\end{tikzfigure}
+\begin{itemize}
+    \item \textbf{Design the ML model in PyTorch} with \faPython~PyTorch API
+    
+    \item \textbf{Dataset generation} for the ML model training via Fortran-based model runs
+    
+    \item \textbf{Train} the PyTorch model on generated data, optimizing for your specific prediction tasks.
+    
+    \item \textbf{pt2ts} 
+        Convert trained (\texttt{.pt}) models to TorchScript (\texttt{.ts})
+    
+    \item \textbf{Hybrid model} 
+        Integrate the TorchScript model with Fortran code using FTorch, enabling inference during runs
+\end{itemize}
