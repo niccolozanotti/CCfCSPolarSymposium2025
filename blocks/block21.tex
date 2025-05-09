@@ -1,1 +1,18 @@
-\lipsum[2-3]
+\begin{tikzfigure}
+    \includegraphics[width=0.42\textwidth]{figures/online-training-diagram.pdf}
+\end{tikzfigure}
+%The online training support is currently a work in progress (led by Joe Wallwork of ICCS). \\
+\textbf{Benefits}:
+\begin{itemize}
+    \item No \faPython~-Fortran conversion overhead + direct integration
+\end{itemize}
+\textbf{Current state}:
+\begin{itemize}
+    \item Tensor operator overloading,~\texttt{requires\_grad} support
+    \item \texttt{torch\_tensor\_backward} (backpropagation) with gradient extraction and zeroing
+\end{itemize}
+\textbf{In progress}:
+\begin{itemize}
+    \item Expose \texttt{torch::optim} algorithms and loss functions
+    \item Expose components from \texttt{torch::nn::Module}
+\end{itemize}
