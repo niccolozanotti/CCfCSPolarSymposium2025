@@ -1,13 +1,4 @@
 Scientific models in the climate domain are predominantly developed in Fortran for its high-performance and science-oriented nature. On the other hand, much of Machine Learning (ML) research is conducted in Python owing to its rich ecosystem of ML frameworks, e.g. PyTorch. 
 
 \textbf{FTorch}~\citep{Atkinson2025} is an open source \href{https://github.com/Cambridge-ICCS/FTorch}{\textcolor{black}{\faGithub}}~library developed by \emph{ICCS} allowing the user to do hybrid modeling by interfacing PyTorch ML models with Fortran code. \\
-\textbf{Features}:
-\begin{itemize}
-    \item Binds Fortran to PyTorch's C\texttt{++} backend (no \faPython~runtime) via~\texttt{iso\_c\_binding} module
-    \item Provides a user-friendly Fortran API close to PyTorch API
-    \item Enables \emph{zero-copy} data transfer between languages
-    \item Handles Fortran \emph{column-major} vs. C/C\texttt{++} \emph{row-major} memory layout differences
-    \item Supports CPU and GPU (CUDA, XPU, MPS backends)
-    \item Tested on UNIX and Windows operating systems
-\end{itemize}
 

@@ -1,14 +1,10 @@
-\begin{tikzfigure}
-    \includegraphics[width=0.44\textwidth]{figures/offline-training-diagram.pdf}
-\end{tikzfigure}
 \begin{itemize}
-    \item \textbf{Design the ML model in PyTorch} with PyTorch \faPython~API
-    
-    \item \textbf{Dataset generation} for the ML model training via Fortran-based model runs
-    
-    \item \textbf{Train} the PyTorch model on generated data, optimizing for the specific predictive tasks
-    
-    \item \textbf{pt2ts} Convert trained  models (\texttt{.pt}) to TorchScript (\texttt{.ts})
-    
-    \item \textbf{Hybrid model} Integrate the TorchScript model with\\ Fortran code using FTorch, enabling inference during runs
+    \setlength{\itemsep}{0pt}
+    \item Binds Fortran to PyTorch's C\texttt{++} backend (no \faPython~runtime) via~\texttt{iso\_c\_binding} module
+    \item Provides a user-friendly Fortran API close to PyTorch API
+    \item Enables \emph{zero-copy} data transfer between languages
+    %\item Handles Fortran \emph{column-major} vs. C/C\texttt{++} \emph{row-major} memory layout differences
+    \item Supports CPU and GPU (CUDA, XPU, MPS backends)
+    \item Tested on UNIX and Windows operating systems
 \end{itemize}
+
